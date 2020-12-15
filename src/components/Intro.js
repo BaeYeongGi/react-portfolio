@@ -30,7 +30,7 @@ const IntroContents = styled.div`
 
 const Intro = () => {
 	return (
-		<Section className="intro">
+		<Section id="intro" className="intro">
 			<SectionTitle className="intro">Intro</SectionTitle>
 			<Contents>
 				<IntroProfileWrap>

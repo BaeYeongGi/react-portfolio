@@ -1,12 +1,16 @@
-import React from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useScroll } from "include/UseScroll";
 
 const HeaderWrap = styled.div`
   width:100%;
   height:100px;
   background:#7c7877;
-
+  position:fixed;
+  z-index:2;
+  transition-property:background;
+  transition-duration:0.3s;
+  &.active {background:#615c5a;}
 `
 
 const Head = styled.header`
@@ -37,11 +41,12 @@ const Gnb = styled.ul`
       }
     }
   }
-
 `
+
 const Header = () => {
+  const { y } = useScroll();
   return (
-    <HeaderWrap>
+    <HeaderWrap className={y > 190 ? 'active' : ''}>
       <Head>
         <Logo><Link to="#">WhyG</Link></Logo>
         <Gnb>
