@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Section, SectionTitle, Contents } from "style/common";
+import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import { URL } from "include/ImageURL";
 import styled from "styled-components";
 
@@ -78,6 +78,7 @@ const SelfInterview = () => {
 	const { contentItem, contentChange } = useTabs(0, tabContents);
 	return (
 		<Section className="self_interview">
+			<SectionArea id="SelfInterview"/>
 			<SectionTitle className="self_interview">Self interview</SectionTitle>
 			<Contents>
 				<InterviewTabs>

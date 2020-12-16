@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Section, SectionTitle } from "style/common";
+import { Section, SectionTitle, SectionArea } from "style/common";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { URL } from "include/ImageURL";
@@ -137,6 +137,7 @@ const Skills = () => {
 	const { contentItem, contentChange } = useSwipe(0, skillsContents);
 	return (
 		<Section className="skills">
+			<SectionArea id="Skills"/>
 			<SectionTitle className="skills">Skills</SectionTitle>
 			<SkillsWrap>
 				<Swiper {...swiperParams} onSlideChange={(swiper) => contentChange(swiper.activeIndex)}>

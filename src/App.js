@@ -14,10 +14,12 @@ const history = createBrowserHistory();
 const SectionWrapper = styled.div`
 	width: 120rem;
 	margin: 0 auto;
-  padding: 14rem 0 0 0;
+	padding: 14rem 0 0 0;
   position:relative;
 	> section {
-		margin-bottom: 4rem;
+		margin-bottom:4rem;
+		margin-top:0rem;
+		position:relative;
   }
 
 `;

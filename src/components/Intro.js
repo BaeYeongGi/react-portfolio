@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, SectionTitle, Contents } from "style/common";
+import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import styled from "styled-components";
 
 const IntroProfileWrap = styled.div`
@@ -30,7 +30,8 @@ const IntroContents = styled.div`
 
 const Intro = () => {
 	return (
-		<Section id="intro" className="intro">
+		<Section className="intro">
+			<SectionArea id="Intro"/>
 			<SectionTitle className="intro">Intro</SectionTitle>
 			<Contents>
 				<IntroProfileWrap>

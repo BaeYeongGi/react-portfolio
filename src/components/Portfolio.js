@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, SectionTitle, Contents } from "style/common";
+import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import { URL } from "include/ImageURL";
 import styled from "styled-components";
 
@@ -140,6 +140,7 @@ const pageLink = "Page Link";
 const Portfolio = () => {
 	return (
 		<Section className="portfolio">
+			<SectionArea id="Portfolio"/>
 			<SectionTitle className="portfolio">Portfolio</SectionTitle>
 			<Contents>
 				<PortfolioListWrap>

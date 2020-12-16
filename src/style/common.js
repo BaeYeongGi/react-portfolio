@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Section = styled.section`
 	min-height: 30rem;
-  position: relative;
-  padding:6rem;
+	position: relative;
+	padding: 6rem;
 	&.intro {
 		background: #76b0ad;
 	}
@@ -29,14 +29,23 @@ export const Section = styled.section`
 		border: 1px solid #fff;
 	}
 `;
+
+export const SectionArea = styled.div`
+	position: absolute;
+	top: -12rem;
+	left: 0;
+	width: 1px;
+	height: 1px;
+`;
+
 export const SectionTitle = styled.h2`
 	font-size: 20px;
 	color: #fff;
 	position: absolute;
 	top: 2rem;
 	left: 2rem;
-  font-weight: 600;
-  padding:0 2rem 2rem 0;
+	font-weight: 600;
+	padding: 0 2rem 2rem 0;
 	&.intro {
 		background: #76b0ad;
 	}
@@ -48,12 +57,12 @@ export const SectionTitle = styled.h2`
 	}
 	&.portfolio {
 		background: #6b8fa1;
-	}  
+	}
 `;
 
 export const Contents = styled.div`
 	display: flex;
-	flex-wrap:wrap;
-  position:relative;
-  z-index:1;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
 `;

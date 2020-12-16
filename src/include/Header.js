@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavHashLink  as Link } from "react-router-hash-link";
 import { useScroll } from "include/UseScroll";
 
 const HeaderWrap = styled.div`
@@ -50,10 +50,10 @@ const Header = () => {
       <Head>
         <Logo><Link to="#">WhyG</Link></Logo>
         <Gnb>
-          <li><Link to="#">Intro</Link></li>
-          <li><Link to="#">Self Interview</Link></li>
-          <li><Link to="#">Skills</Link></li>
-          <li><Link to="#">Portfolio</Link></li>
+          <li><Link smooth to="#Intro">Intro</Link></li>
+          <li><Link smooth to="#SelfInterview">Self Interview</Link></li>
+          <li><Link smooth to="#Skills">Skills</Link></li>
+          <li><Link smooth to="#Portfolio">Portfolio</Link></li>
         </Gnb>
       </Head>
     </HeaderWrap>
