@@ -138,19 +138,64 @@ const PortfolioPage = styled.a`
 	}
 `;
 
+const PortfolioOpacity = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index:2;
+	&.hidden {opacity:0; z-index:-1;}
+	&.visible {opacity:1; z-index:2;}
+`;
+
+const PortfolioPopWrap = styled.div`
+	position: fixed;
+	top: 14rem;
+	bottom: 3rem;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, 0);
+	width: 120rem;
+	height: 100%;
+	&.hidden {
+		opacity:0; z-index:-1;
+	}
+	&.visible {
+		opacity:1; z-index:2;
+	}
+`;
+
+const PopCloseBtn = styled.a`
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 3rem;
+	z-index: 3;
+	top: -3rem;
+	right: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #ff5f5f;
+	cursor: pointer;
+`;
+
 const pageLink = "Page Link";
 
 
 
-const Portfolio = props => {
-	const [ popClass, setPopClass ] = useState('')
-	const [visible, setVisible] = useState("");
-	const popupHomepage = () => {
+const Portfolio = () => {
+	const [ visible, setVisible ] = useState('hidden')
+	const homepagePop = () => {
 		setVisible('visible')
-	
 	}
 
-	console.log('프롭스', props)
+	const closePop = () => {
+		setVisible('hidden')
+	}
 
 	return (
 		<>
@@ -160,7 +205,7 @@ const Portfolio = props => {
 			<Contents>
 				<PortfolioListWrap>
 					<li>
-						<PortfolioThumb onClick={popupHomepage}>
+						<PortfolioThumb onClick={homepagePop}>
 							<img src={images.homepage} alt="Homepage Renewal" />
 							<div className="name">
 								<span></span>
@@ -221,7 +266,14 @@ const Portfolio = props => {
 				</PortfolioListWrap>
 			</Contents>
 		</Section>
-		<PortfolioSlidesPop onClass={visible}  />
+		<PortfolioOpacity className={visible}/>
+		<PortfolioPopWrap className={visible}>
+			<PopCloseBtn onClick={closePop}>
+				<i className="xi-close-min"></i>
+			</PopCloseBtn>
+			<PortfolioSlidesPop/>
+		</PortfolioPopWrap>
+
 		</>
 	);
 };

@@ -27,38 +27,6 @@ const images = {
 	clickCursor: URL + "/images/icon_click_cursor_mint.png",
 };
 
-const PortfolioOpacity = styled.div`
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.8);
-	z-index:2;
-	transition-property:opacity;
-	transition-duration:0.3s;
-	&.hidden {opacity:0; z-index:-1;}
-	&.visible {opacity:1; z-index:2;}
-`;
-
-const PortfolioPopWrap = styled.div`
-	position: fixed;
-	top: 14rem;
-	bottom: 3rem;
-	left: 50%;
-	z-index: 2;
-	transform: translate(-50%, 0);
-	width: 120rem;
-	height: 100%;
-	transition-property:opacity;
-	transition-duration:0.3s;	
-	&.hidden {
-		opacity:0; z-index:-1;
-	}
-	&.visible {
-		opacity:1; z-index:2;
-	}
-`;
 
 const PortfolioSlideWrap = styled.div`
 	overflow-y: auto;
@@ -100,22 +68,6 @@ const PortfolioTxt = styled.ul`
 	}
 `;
 
-const CloseBtn = styled.a`
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	font-size: 3rem;
-	z-index: 3;
-	top: -3rem;
-	right: 0;
-	width: 3rem;
-	height: 3rem;
-	background: #ff5f5f;
-	cursor: pointer;
-`;
-
 const PortfolioController = css`
 	position: absolute;
 	top: -3rem;
@@ -154,24 +106,6 @@ const params = {
 
 
 const PortfolioSlidesPop = ({ onClass }) => {
-	const [visible, setVisible] = useState("hidden");
-
-
-	useEffect(() => {
-		if(onClass === "visible"){
-			setVisible("visible");	
-		}
-	},[onClass, setVisible])
-
-	const closePortfolio = () => {
-		if(onClass === "visible"){
-			setVisible("hidden");
-		}
-	};
-
-
-	
-
 	/*
 	useEffect(() => {
 		setVisible(onClass);
@@ -182,12 +116,7 @@ const PortfolioSlidesPop = ({ onClass }) => {
 
 
 	return (
-		<>
-			<PortfolioOpacity onClick={closePortfolio} className={visible}/>
-			<PortfolioPopWrap className={visible}>
-				<CloseBtn onClick={closePortfolio}>
-					<i className="xi-close-min"></i>
-				</CloseBtn>
+		<>			
 				<PortfolioSlideWrap>
 					<Swiper {...params}>
 						<SwiperSlide>
@@ -331,7 +260,6 @@ const PortfolioSlidesPop = ({ onClass }) => {
 				<PortfolioSlideNext className="slideToNext">
 					<i className="xi-angle-right-min"></i>
 				</PortfolioSlideNext>
-			</PortfolioPopWrap>
 		</>
 	);
 };
