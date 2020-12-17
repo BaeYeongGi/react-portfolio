@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { URL } from "include/ImageURL";
-import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import SwiperCore, { Navigation, Pagination, Autoplay, Keyboard } from "swiper";
 import styled, { css } from "styled-components";
 import "swiper/swiper.scss";
 
-SwiperCore.use([Navigation, Pagination, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Autoplay, Keyboard]);
 
 const images = {
 	homepage: {
@@ -68,6 +68,10 @@ const PortfolioTxt = styled.ul`
 	}
 `;
 
+const PortfolioTitle = styled.p`
+	font-size:3rem; color:#fff; position:absolute; bottom:calc(100% + 1.4rem); left:0; z-index:2;
+`
+
 const PortfolioController = css`
 	position: absolute;
 	top: -3rem;
@@ -97,26 +101,16 @@ const params = {
 		nextEl: ".slideToNext",
 		prevEl: ".slideToPrev",
 	},
-	/*
-	autoplay: {
-		delay: 5000,
-	},
-	*/
+	keyboard: {
+		enabled: true,	
+	}
 };
 
 
-const PortfolioSlidesPop = ({ onClass }) => {
-	/*
-	useEffect(() => {
-		setVisible(onClass);
-	},[onClass])
-*/
-
-	console.log('온클래스', onClass)
-
-
+const PortfolioSlidesPop = () => {
 	return (
 		<>			
+				<PortfolioTitle>Homepage Portfolio</PortfolioTitle>
 				<PortfolioSlideWrap>
 					<Swiper {...params}>
 						<SwiperSlide>

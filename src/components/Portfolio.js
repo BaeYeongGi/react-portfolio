@@ -184,9 +184,6 @@ const PopCloseBtn = styled.a`
 `;
 
 const pageLink = "Page Link";
-
-
-
 const Portfolio = () => {
 	const [ visible, setVisible ] = useState('hidden')
 	const homepagePop = () => {
@@ -237,7 +234,6 @@ const Portfolio = () => {
 								</p>
 							</div>
 						</PortfolioThumb>
-
 						<PortfolioPage href="http://tisepx.com/" target="_blank" rel="noreferrer">
 							<span>{pageLink}</span>
 						</PortfolioPage>
@@ -266,14 +262,13 @@ const Portfolio = () => {
 				</PortfolioListWrap>
 			</Contents>
 		</Section>
-		<PortfolioOpacity className={visible}/>
+		<PortfolioOpacity className={visible} onClick={closePop} />
 		<PortfolioPopWrap className={visible}>
 			<PopCloseBtn onClick={closePop}>
 				<i className="xi-close-min"></i>
 			</PopCloseBtn>
 			<PortfolioSlidesPop/>
 		</PortfolioPopWrap>
-
 		</>
 	);
 };
