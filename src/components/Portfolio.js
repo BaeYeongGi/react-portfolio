@@ -38,6 +38,7 @@ const PortfolioThumb = styled.div`
 			position: absolute;
 			top: 57%;
 			left: 50%;
+			width:100%;
 			transform: translate(-50%, -50%);
 			transition-property: opacity, top;
 			transition-duration: 0.3s;
@@ -157,7 +158,7 @@ const Portfolio = () => {
 									Homepage
 									<br />
 									Renewal
-									<strong>(with react)</strong>
+									<strong>(publishing &amp; react)</strong>
 								</p>							
 							</div>
 						</PortfolioThumb>
@@ -174,7 +175,7 @@ const Portfolio = () => {
 								<span></span>
 								<span></span>
 								<p>TiSepX
-								<strong>(with react)</strong>
+								<strong>(publishing &amp; react)</strong>
 								</p>
 							</div>
 						</PortfolioThumb>
