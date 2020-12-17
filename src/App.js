@@ -9,7 +9,7 @@ import Skills from "components/Skills";
 import Portfolio from "components/Portfolio";
 import Aside from "components/Aside";
 import styled from "styled-components";
-import PortfolioSlidesPop from "components/PortfolioSlidesPop";
+
 
 const history = createBrowserHistory();
 const SectionWrapper = styled.div`
@@ -33,8 +33,7 @@ const App = () => {
 				<Intro />
 				<SelfInterview />
 				<Skills />
-				<Portfolio />
-        <PortfolioSlidesPop/>
+				<Portfolio />        
       </SectionWrapper>
       <Aside />
 			<Footer />

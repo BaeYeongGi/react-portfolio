@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import { URL } from "include/ImageURL";
 import styled from "styled-components";
+import PortfolioSlidesPop from "components/PortfolioSlidesPop";
 
 const images = {
 	homepage: URL + "/images/img_portfolio_homepage.jpg",
@@ -139,15 +140,27 @@ const PortfolioPage = styled.a`
 
 const pageLink = "Page Link";
 
-const Portfolio = () => {
+
+
+const Portfolio = props => {
+	const [ popClass, setPopClass ] = useState('')
+	const [visible, setVisible] = useState("");
+	const popupHomepage = () => {
+		setVisible('visible')
+	
+	}
+
+	console.log('프롭스', props)
+
 	return (
+		<>
 		<Section className="portfolio">
 			<SectionArea id="Portfolio"/>
 			<SectionTitle className="portfolio">Portfolio</SectionTitle>
 			<Contents>
 				<PortfolioListWrap>
 					<li>
-						<PortfolioThumb>
+						<PortfolioThumb onClick={popupHomepage}>
 							<img src={images.homepage} alt="Homepage Renewal" />
 							<div className="name">
 								<span></span>
@@ -208,6 +221,8 @@ const Portfolio = () => {
 				</PortfolioListWrap>
 			</Contents>
 		</Section>
+		<PortfolioSlidesPop onClass={visible}  />
+		</>
 	);
 };
 
