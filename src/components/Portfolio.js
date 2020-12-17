@@ -45,6 +45,7 @@ const PortfolioThumb = styled.div`
 			opacity: 0;
 			font-size: 3rem;
 			line-height: 1.3;
+			> strong {display:block; font-size:2rem;}
 		}
 		> span {
 			display: block;
@@ -156,7 +157,8 @@ const Portfolio = () => {
 									Homepage
 									<br />
 									Renewal
-								</p>
+									<strong>(with react)</strong>
+								</p>							
 							</div>
 						</PortfolioThumb>
 						<PortfolioPage href="http://www.medicalip.com/" target="_blank" rel="noreferrer">
@@ -171,7 +173,9 @@ const Portfolio = () => {
 								<span></span>
 								<span></span>
 								<span></span>
-								<p>TiSepX</p>
+								<p>TiSepX
+								<strong>(with react)</strong>
+								</p>
 							</div>
 						</PortfolioThumb>
 
