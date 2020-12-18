@@ -189,8 +189,15 @@ const PopCloseBtn = styled.a`
 const pageLink = "Page Link";
 const Portfolio = () => {
 	const [ visible, setVisible ] = useState('hidden')
+	const [ popType, setPopType ] = useState('');
 	const homepagePop = () => {
-		setVisible('visible')
+		setVisible('visible');
+		setPopType('popHomepage');
+	}
+
+	const tisepxPop = () => {
+		setVisible('visible');
+		setPopType('popTisepx');
 	}
 
 	const closePop = () => {
@@ -225,7 +232,7 @@ const Portfolio = () => {
 						</PortfolioPage>
 					</li>
 					<li>
-						<PortfolioThumb>
+						<PortfolioThumb onClick={tisepxPop}>
 							<img src={images.tisepx} alt="TiSepX" />
 							<div className="name">
 								<span></span>
@@ -270,7 +277,7 @@ const Portfolio = () => {
 			<PopCloseBtn onClick={closePop}>
 				<i className="xi-close-min"></i>
 			</PopCloseBtn>
-			<PortfolioSlidesPop/>
+			<PortfolioSlidesPop portfolioType={popType}/>
 		</PortfolioPopWrap>
 		</>
 	);

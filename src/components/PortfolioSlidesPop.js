@@ -110,11 +110,19 @@ const params = {
 };
 
 
-const PortfolioSlidesPop = () => {
+
+const PortfolioSlidesPop = ({ portfolioType }) => {
+	console.log('portfolioType', portfolioType)
 	return (
 		<>			
-				<PortfolioTitle>Homepage Portfolio</PortfolioTitle>
+				<PortfolioTitle>
+					{
+						portfolioType === "popHomepage" ? "Homepage" : 
+						(portfolioType === "popTisepx") && "TiSepX"
+					} Portfolio
+				</PortfolioTitle>
 				<PortfolioSlideWrap>
+					{portfolioType === 'popHomepage' &&
 					<Swiper {...params}>
 						<SwiperSlide>
 							<img src={images.homepage.main} alt="main" />
@@ -250,6 +258,20 @@ const PortfolioSlidesPop = () => {
 							</PortfolioTxt>
 						</SwiperSlide>
 					</Swiper>
+					}
+					{portfolioType === 'popTisepx' &&
+					<Swiper {...params}>
+						<SwiperSlide>
+							111
+						</SwiperSlide>
+						<SwiperSlide>
+							222
+						</SwiperSlide>
+						<SwiperSlide>
+							333
+						</SwiperSlide>							
+					</Swiper>
+					}
 				</PortfolioSlideWrap>
 				<PortfolioSlidePrev className="slideToPrev">
 					<i className="xi-angle-left-min"></i>
