@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { URL } from "include/ImageURL";
 import SwiperCore, { Navigation, Pagination, Autoplay, Keyboard } from "swiper";
@@ -81,6 +81,9 @@ const PortfolioController = css`
 	background: #666;
 	color: #fff;
 	cursor: pointer;
+	&:hover {
+		background:#444;
+	}
 `;
 
 const PortfolioSlidePrev = styled.a`

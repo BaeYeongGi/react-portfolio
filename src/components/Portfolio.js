@@ -181,6 +181,9 @@ const PopCloseBtn = styled.a`
 	height: 3rem;
 	background: #ff5f5f;
 	cursor: pointer;
+	&:hover {
+		background:#ff2f2f;
+	}
 `;
 
 const pageLink = "Page Link";
