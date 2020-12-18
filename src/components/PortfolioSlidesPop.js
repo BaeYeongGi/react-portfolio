@@ -24,9 +24,20 @@ const images = {
 		contactList: URL + "/images/portfolio_homepage_contact_list.jpg",
 		contactView: URL + "/images/portfolio_homepage_contact_view.jpg",
 	},
+	tisepx: {
+		main: URL + "/images/portfolio_tisepx_main.jpg",
+		login: URL + "/images/portfolio_tisepx_login.jpg",
+		policy: URL + "/images/portfolio_tisepx_policy.jpg",
+		regist: URL + "/images/portfolio_tisepx_regist.jpg",
+		mypage: URL + "/images/portfolio_tisepx_mypage.jpg",
+		update: URL + "/images/portfolio_tisepx_update.jpg",
+		changePassword: URL + "/images/portfolio_tisepx_change_password.jpg",
+		upload: URL + "/images/portfolio_tisepx_upload.jpg",
+		loading: URL + "/images/portfolio_tisepx_loading.jpg",
+		result: URL + "/images/portfolio_tisepx_result.jpg",
+	},
 	clickCursor: URL + "/images/icon_click_cursor_mint.png",
 };
-
 
 const PortfolioSlideWrap = styled.div`
 	overflow-y: auto;
@@ -109,10 +120,7 @@ const params = {
 	}
 };
 
-
-
 const PortfolioSlidesPop = ({ portfolioType }) => {
-	console.log('portfolioType', portfolioType)
 	return (
 		<>			
 				<PortfolioTitle>
@@ -262,14 +270,65 @@ const PortfolioSlidesPop = ({ portfolioType }) => {
 					{portfolioType === 'popTisepx' &&
 					<Swiper {...params}>
 						<SwiperSlide>
-							111
+							<img src={images.tisepx.main} alt="main" />
+							<PortfolioTxt>
+								<li></li>
+							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
-							222
+							<img src={images.tisepx.login} alt="login" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
-							333
-						</SwiperSlide>							
+							<img src={images.tisepx.policy} alt="policy" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>	
+						<SwiperSlide>
+							<img src={images.tisepx.regist} alt="regist" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>
+						<SwiperSlide>
+							<img src={images.tisepx.mypage} alt="mypage" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>													
+						<SwiperSlide>
+							<img src={images.tisepx.update} alt="update" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>
+						<SwiperSlide>
+							<img src={images.tisepx.changePassword} alt="changePassword" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>
+						<SwiperSlide>
+							<img src={images.tisepx.upload} alt="upload" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>
+						<SwiperSlide>
+							<img src={images.tisepx.loading} alt="loading" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>				
+						<SwiperSlide>
+							<img src={images.tisepx.result} alt="result" />
+							<PortfolioTxt>
+									<li></li>
+							</PortfolioTxt>
+						</SwiperSlide>						
 					</Swiper>
 					}
 				</PortfolioSlideWrap>
