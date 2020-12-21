@@ -10,7 +10,6 @@ import Portfolio from "components/Portfolio";
 import Aside from "components/Aside";
 import styled from "styled-components";
 
-
 const history = createBrowserHistory();
 const SectionWrapper = styled.div`
 	width: 120rem;
@@ -38,6 +37,7 @@ const App = () => {
       <Aside />
 			<Footer />
 		</Router>
+
 	);
 };
 
