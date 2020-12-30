@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import { URL } from "include/ImageURL";
@@ -83,7 +83,7 @@ const SelfInterview = () => {
 			<Contents>
 				<InterviewTabs>
 					{tabContents.map((section, index) => (
-						<li>
+						<li key={index}>
 							<Link to="#" className={contentItem.tabId === index ? "active" : ""} onClick={() => contentChange(index)}>
 								{section.tabButton}
 							</Link>
