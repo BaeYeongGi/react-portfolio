@@ -79,6 +79,7 @@ const SkillsWrap = styled.div`
 const SkillsContents = styled.div`
 	width: 70%;
 	margin: 0 auto;
+	position:relative; z-index:1;
 `;
 
 const ReactJs = () => {
@@ -88,7 +89,7 @@ const ReactJs = () => {
 				함수형 컴포넌트로 작업하는걸 선호하며, 프론트앤드 개발로 참여한 프로젝트는 [ Homepage Renewal, TiSepX ] 입니다.
 				백앤드로부터 받은 API를 이용한 계정 회원가입, 회원가입 이메일 인증, 계정생성, 로그인,
 				회원정보 조회, 회원정보 수정, 비밀번호 변경, 비밀번호 초기화, 회원탈퇴 기능을 구현할 수 있으며
-				react-hooks-form 모듈을 활용한 회원가입, 정보수정 validation을 적용 하였습니다,
+				<a href="https://react-hook-form.com/" target="_blank" rel="noreferrer">react-hooks-form</a> 모듈을 활용한 회원가입, 정보수정 validation을 적용 하였습니다,
 				로그인 상태에 따라 Download 페이지의 파일 다운로드 방지 및 제공 기능을 구현하였습니다. 
 				그 외 개발상황에 필요한 npm module 설치 및 활용이 가능합니다.
 			</p>
