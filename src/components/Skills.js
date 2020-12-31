@@ -18,6 +18,7 @@ const images = {
 	html5: URL + "/images/icon_html5.png",
 	css3: URL + "/images/icon_css3.png",
 	javascript: URL + "/images/icon_javascript.png",
+	seo: URL + "/images/icon_seo.png",
 	dragCursor: URL + "/images/icon_drag_cursor.png",
 	clickCursor: URL + "/images/icon_click_cursor_blue.png",
 	slidesRight: URL + "/images/icon_slide_right_btn.png",
@@ -80,39 +81,121 @@ const SkillsContents = styled.div`
 	margin: 0 auto;
 `;
 
+const ReactJs = () => {
+	return (
+		<>
+		react
+		</>
+	)
+}
+
+const ReactRouterDom = () => {
+	return (
+		<>
+		react-router-dom
+		</>
+	)
+}
+
+const Redux = () => {
+	return (
+		<>
+		redux
+		</>
+	)
+}
+
+const Sass = () => {
+	return (
+		<>
+		sass
+		</>
+	)
+}
+
+const StyledComponent = () => {
+	return (
+		<>
+		styled-component
+		</>
+	)
+}
+
+const Html = () => { 
+	return (
+		<>
+html
+		</>
+	)
+}
+
+const Css = () => {
+	return (
+		<>
+css
+		</>
+	)
+}
+
+const Javascript = () => {
+	return (
+		<>
+			<p>ddfsfd</p>
+		</>
+	)
+}
+
+const Seo = () => {
+	return (
+		<>
+			<p>
+				create-react-app 을 통해 생성한 프로젝트는 CSR(Client Side Rendering)입니다.
+				프로젝트를 build하면 하나의 html파일로 저장이 되는데, SEO에 좀 더 유리한 페이지로 build 하기 위해
+				react-helmet과 react-snap 모듈을 이용하여 각각의 페이지별 index.html 파일을 생성해줍니다.
+				현재 사용하고 있는 방법은 SSR(Server Side Rendering) 방식이 아니기 때문에
+				SSR을 대신한 임시방편으로 SEO를 적용시키는게 가능합니다.				
+			</p>
+		</>
+	)
+}
+
 const skillsContents = [
 	{
 		skillId: 0,
-		skillContent: "ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ",
+		skillContent: <ReactJs/>,
 	},
 	{
 		skillId: 1,
-		skillContent: "ㅇㅇㅇㅇ222",
+		skillContent: <ReactRouterDom/>,
 	},
 	{
 		skillId: 2,
-		skillContent: "ㅇㅇㅇㅇ3333",
+		skillContent: <Redux/>,
 	},
 	{
 		skillId: 3,
-		skillContent: "ㅇㅇㅇㅇ44444",
+		skillContent: <Sass/>,
 	},
 	{
 		skillId: 4,
-		skillContent: "ㅇㅇㅇㅇ5555",
+		skillContent: <StyledComponent/>,
 	},
 	{
 		skillId: 5,
-		skillContent: "ㅇㅇㅇㅇ66666",
+		skillContent: <Html/>,
 	},
 	{
 		skillId: 6,
-		skillContent: "ㅇㅇㅇㅇ77777",
+		skillContent: <Css/>,
 	},
 	{
 		skillId: 7,
-		skillContent: "98888888",
+		skillContent: <Javascript/>,
 	},
+	{
+		skillId: 8,
+		skillContent: <Seo/>,
+	},	
 ];
 
 const swiperParams = {
@@ -181,6 +264,11 @@ const Skills = () => {
 							<img src={images.javascript} alt="javascript" />
 						</div>
 					</SwiperSlide>
+					<SwiperSlide>
+						<div>
+							<img src={images.seo} alt="SEO" />
+						</div>
+					</SwiperSlide>					
 				</Swiper>
 				<hr className="skills_line" />
 				<SkillsContents>{contentItem.skillContent}</SkillsContents>
