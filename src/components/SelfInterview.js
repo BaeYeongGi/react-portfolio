@@ -92,7 +92,20 @@ const Strength = () => {
 const Changing = () => {
 	return (
 		<>
-		
+			<p>
+				돌이켜보면 길지않은 순간에 퇴사를 결심하고 잦은 이직을 경험하게 되었습니다.
+				업무를 하다 보면서 정해진 목표와 방향성을 되짚고, 다시 생각해 볼 때 퇴사를 결심하게 되었습니다.
+			</p>
+			<ul>
+				<li>동영정보) 상대적으로 쉬운 수준의 업무와 자기개발의 한계성을 느끼고, 디자인 업무보다는 코딩업무에 집중하고자 서울에 정착 후 이직을 하게 되었습니다. [1년 1개월]</li>
+				<li>가온스) 퍼블리싱 외 추가적인 업무추가 요구사항으로 기획업무(고객과의 Contact)를 함께 접하게 되어 업무 방향성을 다시잡기 위해 이직을 하게 되었습니다. [1년 2개월]</li>
+				<li>아이디병원) 코로나19로 인한 경영난으로 이직을 하게 되었습니다. 다양한 퍼블리싱 업무를 익힌 후 프론트앤드 개발을 하고싶다는 목표를 가지게 되었습니다. [11개월]</li>
+				<li>메디컬아이피) 현재는 의료 소프트웨어 개발 회사인 메디컬아이피에 프론트앤드 개발자로 재직중에 있습니다. [20년 6월 ~ 재직중]</li>
+			</ul>
+			<p>
+				잦은 이직이 좋은건 아니라고 생각합니다. 프론트앤드 개발을 하겠다는 확실한 방향성과 목표를 가지고
+				앞으로 하고싶은일을 한 회사에서 꾸준히 하게 되었으면 좋겠습니다.				
+			</p>
 		</>
 	)
 }
@@ -110,6 +123,8 @@ const Plan = () => {
 		</>
 	)
 }
+
+
 
 const tabContents = [
 	{
@@ -147,7 +162,7 @@ const SelfInterview = () => {
 	return (
 		<Section className="self_interview">
 			<SectionArea id="SelfInterview"/>
-			<SectionTitle className="self_interview">Self interview</SectionTitle>
+			<SectionTitle className="self_interview">Self Interview</SectionTitle>
 			<Contents>
 				<InterviewTabs>
 					{tabContents.map((section, index) => (
