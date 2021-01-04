@@ -83,10 +83,7 @@ const Intro = () => {
 				</IntroProfileWrap>
 				<IntroContents>
 					<p className="intro_contents_txt">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-						passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						이슈와 문제를 해결 후 가져다 주는 기쁨을 아는 프론트앤드 개발자 배영기 입니다.   																													
 					</p>
 					<hr className="intro_contents_line" />
 					<p className="intro_contents_history_title">History</p>
