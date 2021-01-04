@@ -80,6 +80,12 @@ const SkillsContents = styled.div`
 	width: 70%;
 	margin: 0 auto;
 	position:relative; z-index:1;
+	> dl { color:#fff;
+		> dt {font-size:2rem; text-align:center; margin:0 0 1rem 0;}
+		> dd {font-size:1.6rem; line-height:1.5;
+			> a {border-bottom:1px solid #fff; color:#fff; margin:0 0.6rem;}
+		}
+	}
 `;
 
 const ReactJs = () => {
@@ -156,11 +162,11 @@ const StyledComponent = () => {
 	return (
 		<>		
 			<dl>
-				<dt>styled-component</dt>
+				<dt>styled-components</dt>
 				<dd>
 					TiSepX 프로젝트에 본격적으로 도입하고 사용한 모듈입니다. css와 scss의 단점을 보완하고자 사용하였습니다.
 					외부 라이브러리와 css 클래스가 중첩되는 현상도 막을 수 있을 뿐만 아니라, 기존의 컴포넌트의 element class 들을 한 scss 파일에서 관리하기 번거로운점을 개선하였습니다.
-					컴포넌트 기반의 스타일링이라 간단하고 개별적이고 직관적으로 관리할 수 있다는점이 큰 장점으로 느껴졌습니다. scss와 마찬가지로 유사한 문법이 많을뿐더러 다양하게 스타일링 할 수 있습니다.
+					컴포넌트 기반의 스타일링이라 간단하고 개별적이고 직관적으로 관리할 수 있다는점이 큰 장점으로 느껴졌습니다. scss와 마찬가지로 사용가능하며 다양하게 스타일링 할 수 있습니다.
 				</dd>
 			</dl>
 		</>
@@ -170,7 +176,16 @@ const StyledComponent = () => {
 const Html = () => { 
 	return (
 		<>
-html
+			<dl>
+				<dt>HTML</dt>
+				<dd>
+					페이지의 뼈대를 장식하는 html 태그를 사용할 수 있습니다.
+					시맨틱태그를 활용한 마크업이 가능하며 각 용도에 따라 사용 가능한 meta 태그,
+					입력시 필요에 따라 사용되는 입력태그,
+					ie 크로스 브라우징을 고려한 다양한 마크업이 가능합니다.					
+				</dd>
+			</dl>
+			
 		</>
 	)
 }
@@ -178,7 +193,14 @@ html
 const Css = () => {
 	return (
 		<>
-css
+			<dl>
+				<dt>CSS</dt>
+				<dd>
+					페이지의 레이아웃을 디자인 시안과 동일하게 퍼블리싱하고 animation과 transition을 이용한
+					동적인 효과를 빠르게 구현할 수 있습니다. css 또한 ie 크로스 브라우징을 고려한 스타일링 작업이 가능하며,
+					PC 디자인 시안이 있다면 별도의 Mobile 시안 없이 반응형 페이지를 제작 할 수 있습니다. 
+				</dd>
+			</dl>
 		</>
 	)
 }
@@ -186,7 +208,14 @@ css
 const Javascript = () => {
 	return (
 		<>
-			<p>ddfsfd</p>
+			<dl>
+				<dt>Javascript</dt>
+				<dd>
+					기본적인 javascript 문법과 반복문, 제어문, dom에 접근하여 page와 element에 동적인 이벤트와 효과를 줄 수 있습니다.
+					초반 퍼블리싱 업무를 진행할땐 주로 jQuery를 활용하였으나, vanilla javascript를 적극 활용하여 Web Publishing Portfolio를 완성하였습니다.
+					react.js를 도입 후 ES6문법과 javascript만을 이용한 프론트앤드개발을 진행하고 있습니다.    				
+				</dd>
+			</dl>
 		</>
 	)
 }
