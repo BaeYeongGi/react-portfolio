@@ -83,7 +83,9 @@ const Intro = () => {
 				</IntroProfileWrap>
 				<IntroContents>
 					<p className="intro_contents_txt">
-						이슈와 문제를 해결 후 가져다 주는 기쁨을 아는 프론트앤드 개발자 배영기 입니다.   																													
+						다양한 개발을 경험하고 문제를 해결할 준비가 되었습니다.<br/>
+						이슈와 문제를 해결한 후 가져다 주는 기쁨을 아는<br/>
+						프론트앤드 개발자 배영기 입니다.<br/>																							
 					</p>
 					<hr className="intro_contents_line" />
 					<p className="intro_contents_history_title">History</p>
