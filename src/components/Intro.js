@@ -1,64 +1,7 @@
 import React from "react";
-import { Section, SectionTitle, Contents, SectionArea } from "style/common";
-import styled from "styled-components";
+import { Section, SectionTitle, Contents, SectionArea } from "style/Common";
+import { IntroProfileWrap, IntroContents } from "style/Intro";
 
-const IntroProfileWrap = styled.div`
-	.intro_profile_img {
-		width: 15rem;
-		height: 15rem;
-		border-radius: 15rem;
-		margin: 0 0 1.6rem 0;
-		background: #d5e5ff;
-	}
-	> dl {
-		text-align: center;
-		color: #fff;
-		> dt {
-			margin: 0 0 1rem 0;
-		}
-		> dd {
-		}
-		&:not(:last-child) {
-			&::after {
-				content: "";
-				display: block;
-				width: 5px;
-				height: 5px;
-				border-radius: 5px;
-				background: #fff;
-				margin: 1.6rem auto;
-			}
-		}
-	}
-`;
-
-const IntroContents = styled.div`
-	padding: 0 0 0 4rem;
-	width: calc(100% - 15rem);
-	.intro_contents_txt {
-		font-size: 1.6rem;
-		color: #fff;
-		line-height: 1.3;
-	}
-	.intro_contents_line {
-		display: block;
-		border: 0;
-		width: 100%;
-		height: 1px;
-		background: #fff;
-		margin: 2rem 0;
-	}
-	.intro_contents_history_title {
-		color: #fff;
-		font-size: 2rem;
-		margin: 0 0 2rem 0;
-	}
-	.intro_contents_history_contents {
-		color: #fff;
-		font-size: 1.6rem;
-		line-height: 1.6;
-	}
-`;
 
 const Intro = () => {
 	return (
@@ -83,9 +26,12 @@ const Intro = () => {
 				</IntroProfileWrap>
 				<IntroContents>
 					<p className="intro_contents_txt">
-						다양한 개발을 경험하고 문제를 해결할 준비가 되었습니다.<br/>
-						이슈와 문제를 해결한 후 가져다 주는 기쁨을 아는<br/>
-						프론트앤드 개발자 배영기 입니다.<br/>																							
+						다양한 개발을 경험하고 문제를 해결할 준비가 되었습니다.
+						<br />
+						이슈와 문제를 해결한 후 가져다 주는 기쁨을 아는
+						<br />
+						프론트앤드 개발자 배영기 입니다.
+						<br />
 					</p>
 					<hr className="intro_contents_line" />
 					<p className="intro_contents_history_title">History</p>

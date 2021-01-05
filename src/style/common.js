@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const device = {
+	labtop: "@media screen and (max-width: 1280px)",
+	tablet: "@media screen and (max-width: 1024px)",
+	mobile: "@media screen and (max-width: 720px)",
+};
+
 export const Section = styled.section`
 	min-height: 30rem;
 	position: relative;
