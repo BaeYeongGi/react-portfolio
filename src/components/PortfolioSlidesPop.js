@@ -76,6 +76,9 @@ const PortfolioTxt = styled.ul`
 			color: #0f4986;
 			border-bottom: 1px solid #0f4986;
 		}
+		> span {
+			&.upper {text-transform:uppercase;}
+		}
 	}
 `;
 
@@ -214,7 +217,7 @@ const PortfolioSlidesPop = ({ portfolioType }) => {
 							<img src={images.homepage.regist} alt="regist" />
 							<PortfolioTxt>
 								<li>
-									회원가입 입력 화면입니다. 올바른 회원정보를 입력하기 위해 react-hook-form 모듈을 설치하여 조건에 맞는 validation을 추가하였습니다. 비밀번호의
+									회원가입 입력 화면입니다. 올바른 회원정보를 입력하기 위해 react-hook-form 모듈을 설치하여 입력조건에 맞는 validation을 추가하였습니다. 비밀번호의
 									경우 정규표현식을 이용하여 적용하였습니다.
 								</li>
 								<li>Backend에서 보내준 국가코드를 출력해줍니다. get통신을 이용하였습니다.</li>
@@ -272,61 +275,101 @@ const PortfolioSlidesPop = ({ portfolioType }) => {
 						<SwiperSlide>
 							<img src={images.tisepx.main} alt="main" />
 							<PortfolioTxt>
-								<li></li>
+								<li>
+									<span className="upper">Try it now</span>
+									버튼을 통해 TiSepX를 실행합니다. 로그인이 되어있지 않다면 로그인 화면으로 전환할지에 대한 선택 팝업을 띄웁니다.
+									로그인 상태에 따라 <span className="upper">sign up</span> 버튼을 노출, 숨김 처리합니다. 
+								</li>
+								<li>
+									로그인이 되어있지 않다면 Login 버튼, 로그인이 되어있다면 MyPage 버튼을 노출합니다.
+								</li>
 							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={images.tisepx.login} alt="login" />
 							<PortfolioTxt>
-									<li></li>
+									<li>
+										아이디와 패스워드를 입력하여 로그인 하는 화면입니다. 마찬가지로 입력정보를 올바르게 입력하지 않으면 로그인을 할 수 없다는 알람을 띄웁니다. 계정이 존재하지
+										않으면 Sign Up을 통해 회원가입 페이지로 이동합니다.
+										<br />
+										로그인을 한 후 Backend로부터 accessToken과 로그인한계정의 정보를 받아 Redux에 정보를 저장합니다. accessToken과 sessionStorage를 이용하여
+										다른페이지로 전환을 시도해도 회원 정보를 잃지않도록 합니다.										
+									</li>
+									<li>
+										입력한 아이디의 정보를 기억합니다. remember me에 체크, 로그인 후 로컬스토리지로 브라우저에 회원의 아이디값을 저장합니다.
+									</li>
 							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={images.tisepx.policy} alt="policy" />
 							<PortfolioTxt>
-									<li></li>
+									<li>
+									회원가입전 회원약관과 개인정보보호정책에 동의를 하는 화면입니다. 두 개의 checkbox를 모두 동의할 경우에만 Sign Up 버튼을 통해 다음 화면으로
+									넘어갑니다.										
+									</li>
 							</PortfolioTxt>
 						</SwiperSlide>	
 						<SwiperSlide>
 							<img src={images.tisepx.regist} alt="regist" />
 							<PortfolioTxt>
-									<li></li>
+								<li>
+									회원가입 입력 화면입니다. 올바른 회원정보를 입력하기 위해 react-hook-form 모듈을 설치하여 입력조건에 맞는 validation을 추가하였습니다. 비밀번호의
+									경우 정규표현식을 이용하여 적용하였습니다.
+								</li>
+								<li>Backend에서 보내준 국가코드를 출력해줍니다. get통신을 이용하였습니다.</li>
 							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={images.tisepx.mypage} alt="mypage" />
 							<PortfolioTxt>
-									<li></li>
+								<li>로그인 후 Redux 에서 저장된 정보를 MyPage 컴포넌트에 출력해줍니다.</li>
+								<li>비밀번호 변경 페이지로 이동합니다.</li>
+								<li>dcm 파일을 업로드 해서 결과를 출력해주는 화면으로 전환합니다.</li>
+								<li>
+									Backend에서 보내준 Logout API를 이용해 로그아웃 기능을 적용합니다. Redux와 sessionStorage에 저장해둔 정보를 지워주는 코드를 함께 작성해줍니다.
+								</li>
 							</PortfolioTxt>
 						</SwiperSlide>													
 						<SwiperSlide>
 							<img src={images.tisepx.update} alt="update" />
 							<PortfolioTxt>
-									<li></li>
+								<li>로그인한 계정의 정보를 수정하여 적용하는 API를 사용합니다.</li>
 							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={images.tisepx.changePassword} alt="changePassword" />
 							<PortfolioTxt>
-									<li></li>
+								<li>현재의 비밀번호, 변경할 비밀번호와 다시 입력해야하는 입력란이 일치해야 비밀번호 변경 API가 적용됩니다.</li>
 							</PortfolioTxt>
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={images.tisepx.upload} alt="upload" />
 							<PortfolioTxt>
-									<li></li>
-							</PortfolioTxt>
+									<li>
+										Homepage 혹은 TiSepX 에 회원가입이 되어있는 회원에 한해 로그인 후 이용이 가능한 화면입니다.
+										환자의 X-ray 사진이 담긴 dcm 파일을 분석해 폐 병변의 결과값을 분석해 줍니다.
+									</li>
+									<li>
+										클릭시 MyPage 화면으로 전환됩니다.
+									</li>
+									<li>
+										샘플 X-ray 사진이 담긴 dcm 파일을 다운로드 합니다.
+									</li>
+							</PortfolioTxt> 
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={images.tisepx.loading} alt="loading" />
 							<PortfolioTxt>
-									<li></li>
+									<li>
+										dcm 파일의 결과값이 분석되기전 Analyzing 화면을 띄웁니다.  
+									</li>
 							</PortfolioTxt>
 						</SwiperSlide>				
 						<SwiperSlide>
 							<img src={images.tisepx.result} alt="result" />
 							<PortfolioTxt>
-									<li></li>
+									<li>dcm 파일의 결과값을 화면에 출력합니다.</li>
+									<li>폐 영역과 병변의 영역을 모두 출력 후 병변이 차지하는 비율을 계산하여 출력합니다.</li>
 							</PortfolioTxt>
 						</SwiperSlide>						
 					</Swiper>
