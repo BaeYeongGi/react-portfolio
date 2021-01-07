@@ -5,6 +5,7 @@ export const device = {
 	labtop: "@media screen and (max-width: 1280px)",
 	tablet: "@media screen and (max-width: 1024px)",
 	mobile: "@media screen and (max-width: 720px)",
+	tinyMobile: "@media screen and (max-width: 400px)",
 };
 
 export const Section = styled.section`

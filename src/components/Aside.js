@@ -53,23 +53,6 @@ const Aside = () => {
 		getWeatherAPI();
 	}, [location.LAT, location.LON]);
 
-	useEffect(() => {
-		/*
-		const get5DaysWeatherAPI = async () => {
-			return await axios
-			.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${location.LAT}&lon=${location.LON}&appid=${WEATHER_KEY}&units=metric`)
-			.then((result) => {
-				console.log("날씨5day data", result.data.list)
-				setNextWeather(result.data.list)				
-			})
-			.catch((error) => {
-				console.log('에러', error)
-			});
-		};
-		get5DaysWeatherAPI();
-		*/
-	},[])
-
 	const imgSrc = "http://openweathermap.org/img/wn/" + weather.icon + "@2x.png";
 
 

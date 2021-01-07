@@ -44,7 +44,6 @@ const SectionWrapper = styled.div`
 const App = () => {
 	return (
 		<Router history={history}>
-			
 			<Header />
 			<SectionWrapper>
 				<Intro />
