@@ -17,7 +17,7 @@ const SectionWrapper = styled.div`
 	margin: 0 auto;
 	padding: 14rem 0 0 0;
 	position:relative;
-	transition-property:padding;
+	transition-property:padding, margin;
 	transition-duration:0.3s;
 	> section {
 		margin-bottom:4rem;
@@ -26,10 +26,13 @@ const SectionWrapper = styled.div`
   }
   ${device.labtop} {
 	 width:100%;
-	 padding:12rem 3rem 0 3rem;
+	 padding:11rem 3rem 0 3rem;
+	 > section {
+		margin-bottom:3rem;
+	 }	 
   }
   ${device.tablet} {
-
+		padding:12rem 3rem 0 3rem;
   }
   ${device.mobile} {
 
