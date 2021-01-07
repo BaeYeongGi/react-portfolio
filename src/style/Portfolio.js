@@ -149,7 +149,6 @@ export const PortfolioThumb = styled.div`
 					top: 50%;
 				}
 				> span {
-					background: #fff;
 					&:nth-child(1) {
 						width: calc(100% - 3.2rem);
 					}
@@ -165,6 +164,34 @@ export const PortfolioThumb = styled.div`
 				}
 			}			
 		}
+	}
+	${device.mobile} {
+		.name {
+			background: rgba(0, 0, 0, 0.7);
+			> p {
+				opacity: 1;
+				top: 50%;		
+				> strong {
+					margin:0.6rem 0 0 0;
+				}					
+			}
+			> span {
+				background:#fff;
+				&:nth-child(1) {
+					width: calc(100% - 3.2rem);
+				}
+				&:nth-child(2) {
+					height: calc(100% - 3.2rem);
+				}
+				&:nth-child(3) {
+					width: calc(100% - 3.2rem);
+				}
+				&:nth-child(4) {
+					height: calc(100% - 3.2rem);
+				}
+			}			
+		}
+
 	}
 `;
 
@@ -197,6 +224,7 @@ export const PortfolioPage = styled.a`
 		&::after {
 			left: 0;
 		}
+		> span {}
 	}
 `;
 
@@ -234,6 +262,12 @@ export const PortfolioPopWrap = styled.div`
 	&.visible {
 		opacity: 1;
 		z-index: 2;
+	}
+	${device.labtop} {
+		width:calc(100% - 6rem);
+		left:3rem;
+		right:3rem;
+		transform:translate(0, 0);
 	}
 `;
 

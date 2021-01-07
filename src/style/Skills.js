@@ -34,7 +34,6 @@ export const SkillsWrap = styled.div`
 				justify-content: center;
 				align-items: center;
 				margin: 0 auto;
-
 				transition-property: width, height, opacity;
 				transition-duration: 0.3s;
 				opacity: 0.7;
@@ -68,7 +67,6 @@ export const SkillsWrap = styled.div`
 		border: 0;
 		margin: -23px auto 3rem auto;
 	}
-	${device.labtop} {}
 	${device.tablet} {
 		.swiper-container {margin:0 auto;
 			.swiper-slide {height:180px;
@@ -87,6 +85,12 @@ export const SkillsWrap = styled.div`
 					> div {width:160px; height:160px;}
 				}
 			}
+			.swiper-button-prev,
+			.swiper-button-next {
+				&::after {
+					font-size:4rem;
+				}
+			}					
 		}		
 	}
 `;
@@ -111,6 +115,12 @@ export const SkillsContents = styled.div`
 				color: #fff;
 				margin: 0 0.6rem;
 			}
+		}
+	}
+	${device.mobile} { 
+		width:80%;
+		> dl {
+			> dt {margin:0 0 2rem 0;}
 		}
 	}
 `;
