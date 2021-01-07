@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
+import { device } from "style/Common";
 
 const images = {
 	clickCursor: URL + "/images/icon_click_cursor_brown.png",
@@ -7,11 +8,13 @@ const images = {
 
 export const InterviewTabs = styled.ul`
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
 	width: 100%;
 	> li {
 		width: 16rem;
 		height: 8rem;
+		transition-property:width;
+		transition:0.3s;
 		text-align: center;
 		line-height: 1.4;
 		> a {
@@ -32,6 +35,21 @@ export const InterviewTabs = styled.ul`
 			margin: 0 1rem 0 0;
 		}
 	}
+	${device.labtop} {
+
+	}
+	${device.tablet} {
+		justify-content:space-between;
+		> li { width:calc(25% - 1rem); height:auto;
+			&:not(:last-child) {
+				margin: 0 0 0 0;
+			}	
+			> a {padding :1rem 1.4rem;}	
+		}
+	}	
+	${device.mobile} {
+		
+	}		
 `;
 
 export const InterviewContents = styled.div`

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
+import { device } from "style/Common";
 
 export const images = {
 	homepage: URL + "/images/img_portfolio_homepage.jpg",
@@ -16,6 +17,17 @@ export const PortfolioListWrap = styled.ul`
 		text-align: center;
 		&:not(:last-child) {
 			margin: 0 2.6rem 0 0;
+		}
+		> div {
+			> img {width:100%;}
+		}
+	}
+	${device.labtop} {}
+	${device.tablet} {}
+	${device.mobile} {
+		flex-wrap:wrap;
+		> li {
+			&:not(:last-child) {margin:0 0 2rem 0;}
 		}
 	}
 `;
@@ -105,6 +117,53 @@ export const PortfolioThumb = styled.div`
 					height: calc(100% - 4rem);
 				}
 			}
+		}
+	}
+	${device.tablet} {
+		.name { 
+			> p {font-size:2.4rem;
+				> strong {font-size:1.6rem;}
+			}
+			> span {
+				&:nth-child(1) {
+					top: 1.6rem;
+					left: 1.6rem;
+				}
+				&:nth-child(2) {
+					top: 1.6rem;
+					right: 1.6rem;
+				}
+				&:nth-child(3) {
+					bottom: 1.6rem;
+					right: 1.6rem;
+				}
+				&:nth-child(4) {
+					bottom: 1.6rem;
+					left: 1.6rem;
+				}
+			}
+			&:hover {
+				background: rgba(0, 0, 0, 0.7);
+				> p {
+					opacity: 1;
+					top: 50%;
+				}
+				> span {
+					background: #fff;
+					&:nth-child(1) {
+						width: calc(100% - 3.2rem);
+					}
+					&:nth-child(2) {
+						height: calc(100% - 3.2rem);
+					}
+					&:nth-child(3) {
+						width: calc(100% - 3.2rem);
+					}
+					&:nth-child(4) {
+						height: calc(100% - 3.2rem);
+					}
+				}
+			}			
 		}
 	}
 `;

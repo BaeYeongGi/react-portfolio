@@ -195,6 +195,21 @@ const swiperParams = {
 	autoplay: {
 		delay: 5000,
 	},
+	breakpoints: {
+		1280: {
+			slidesPerView:5,
+		},
+		1024: {
+			slidesPerView:4,
+		},
+		720: {
+			slidesPerView:3,
+		},
+		480: {
+			slidesPerView:2
+		}
+	}
+
 };
 
 const useSwipe = (initialSlides, allSlides) => {

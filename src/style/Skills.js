@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
+import { device } from "style/Common";
 
 export const images = {
 	react: URL + "/images/icon_react.png",
@@ -66,6 +67,27 @@ export const SkillsWrap = styled.div`
 		background: #fff;
 		border: 0;
 		margin: -23px auto 3rem auto;
+	}
+	${device.labtop} {}
+	${device.tablet} {
+		.swiper-container {margin:0 auto;
+			.swiper-slide {height:180px;
+				> div {width:140px; height:140px;}
+				&.swiper-slide-active {
+					> div {width:180px; height:180px;}
+				}
+			}
+		}
+	}
+	${device.mobile} {
+		.swiper-container {
+			.swiper-slide {height:160px;
+				> div {width:120px; height:120px;}
+				&.swiper-slide-active {
+					> div {width:160px; height:160px;}
+				}
+			}
+		}		
 	}
 `;
 

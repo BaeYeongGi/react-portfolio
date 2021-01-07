@@ -21,7 +21,7 @@ export const SideBar = styled.div`
 	background: #fff;
 	border-radius: 1.6rem;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-	z-index: 2;
+	z-index: 1;
 	.weather_icon {
 		display: block;
 		margin: 0 auto;
