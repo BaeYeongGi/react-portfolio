@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "style/Common";
 
 export const FooterWrap = styled.div`
 	width: 100%;
@@ -11,7 +12,17 @@ export const FooterContents = styled.footer`
   display:flex;
   justify-content:space-between;
   align-items:center;
-	margin: 0 auto;
+  margin: 0 auto;
+  ${device.labtop} {
+   width:100%;
+   padding:0 3rem;
+  }
+  ${device.tablet} {
+
+  }
+  ${device.mobile} {
+
+  }  
 `;
 
 export const FooterSNS = styled.ul`

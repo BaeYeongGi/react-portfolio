@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const device = {
+	sidebar: "@media screen and (max-width:1610px)",
 	labtop: "@media screen and (max-width: 1280px)",
 	tablet: "@media screen and (max-width: 1024px)",
 	mobile: "@media screen and (max-width: 720px)",
@@ -34,6 +35,16 @@ export const Section = styled.section`
 		right: 2rem;
 		border: 1px solid #fff;
 	}
+  ${device.labtop} {
+   
+  }
+  ${device.tablet} {
+
+  }
+  ${device.mobile} {
+
+  }	
+
 `;
 
 export const SectionArea = styled.div`

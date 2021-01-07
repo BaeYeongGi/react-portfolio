@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "style/Common";
 
 export const SideBar = styled.div`
 	position: fixed;
@@ -10,11 +11,30 @@ export const SideBar = styled.div`
 	margin-left: 70rem;
 	background: #fff;
 	border-radius: 1.6rem;
+	z-index:2;
 	.weather_icon {
 		display: block;
 		margin: 0 auto;
 		width: 8rem;
 	}
+	${device.sidebar} {
+		left:auto;
+		right:3rem;
+		transform:translate(0, 0);
+		margin-left:0;
+	}
+  ${device.labtop} {
+
+		
+	 
+	 
+  }
+  ${device.tablet} {
+
+  }
+  ${device.mobile} {
+
+  }	
 `;
 
 export const DateState = styled.ul`

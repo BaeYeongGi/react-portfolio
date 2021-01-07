@@ -106,7 +106,7 @@ const Aside = () => {
 						(weather.weatherState === "Mist") && "안개"					
 					}
 				</li>
-				<li>{weather.temp}°</li>
+				<li>{Math.round(weather.temp)}°</li>
 			</WeatherState>		
 		</SideBar>
 	);
