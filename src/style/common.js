@@ -42,7 +42,7 @@ export const Section = styled.section`
 
   }
   ${device.mobile} {
-
+		padding:6rem 4rem 4rem 4rem;
   }	
 
 `;

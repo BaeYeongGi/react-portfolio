@@ -21,7 +21,8 @@ export const FooterContents = styled.footer`
 
   }
   ${device.mobile} {
-
+    flex-wrap:wrap;
+    justify-content:center;
   }  
 `;
 
@@ -51,8 +52,14 @@ export const FooterSNS = styled.ul`
       }
     }
     &:not(:last-child) {margin:0 0 0.8rem 0;}
-
-	}
+  }
+  ${device.mobile} {
+    width:50%;
+    margin: 0 auto 3rem auto;
+    > li { width:100%;
+      > a { width:100%; padding: 1.4rem 1.4rem;}
+    }
+  }
 `;
 
 export const FooterInfo = styled.ul`
@@ -60,5 +67,9 @@ export const FooterInfo = styled.ul`
   > li { color:#fff;
     > a {color:#fff; display:inline-block; border-bottom:1px solid #fff;}
     &:not(:last-child) {margin:0 0 1rem 0;}
+  }
+  ${device.mobile} {
+    width:100%;
+    text-align:center;
   }
 `;

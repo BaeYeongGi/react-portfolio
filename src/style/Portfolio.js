@@ -22,11 +22,10 @@ export const PortfolioListWrap = styled.ul`
 			> img {width:100%;}
 		}
 	}
-	${device.labtop} {}
-	${device.tablet} {}
 	${device.mobile} {
 		flex-wrap:wrap;
 		> li {
+			width:100%;
 			&:not(:last-child) {margin:0 0 2rem 0;}
 		}
 	}

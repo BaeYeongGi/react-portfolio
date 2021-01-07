@@ -35,9 +35,6 @@ export const InterviewTabs = styled.ul`
 			margin: 0 1rem 0 0;
 		}
 	}
-	${device.labtop} {
-
-	}
 	${device.tablet} {
 		justify-content:space-between;
 		> li { width:calc(25% - 1rem); height:auto;
@@ -48,7 +45,9 @@ export const InterviewTabs = styled.ul`
 		}
 	}	
 	${device.mobile} {
-		
+		> li {
+			width:calc(25% - 0.6rem);
+		}
 	}		
 `;
 
@@ -59,17 +58,20 @@ export const InterviewContents = styled.div`
 	> p {
 		color: #fff;
 		font-size: 1.6rem;
-		line-height: 1.4;
+		line-height: 1.5;
 	}
 	> ul {
 		margin: 1.4rem 0 1.4rem 0;
 		> li {
 			color: #fff;
 			font-size: 1.6rem;
-			line-height: 1.4;
+			line-height: 1.5;
 			border-bottom: 1px solid #fff;
 			padding: 0 0 0.4rem 0;
 			margin: 0 0 0.4rem 0;
 		}
+	}
+	${device.mobile} {
+		padding:3rem;
 	}
 `;

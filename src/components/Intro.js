@@ -8,12 +8,12 @@ const Intro = () => {
 		<Section className="intro">
 			<SectionArea id="Intro" />
 			<SectionTitle className="intro">Intro</SectionTitle>
-			<Contents>
+			<Contents class="intro_contents">
 				<IntroProfileWrap>
 					<div className="intro_profile_img"></div>
 					<dl>
 						<dt>Name</dt>
-						<dd>bae yeong gi</dd>
+						<dd>Bae yeong gi</dd>
 					</dl>
 					<dl>
 						<dt>Birth</dt>

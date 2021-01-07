@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "style/Common";
 
 export const IntroProfileWrap = styled.div`
 	.intro_profile_img {
@@ -28,6 +29,13 @@ export const IntroProfileWrap = styled.div`
 			}
 		}
 	}
+	${device.mobile} {
+		width:100%;
+		margin:0 0 2rem 0;
+		.intro_profile_img { 
+			margin:0 auto 1.6rem auto;
+		}	
+	}
 `;
 
 export const IntroContents = styled.div`
@@ -55,5 +63,11 @@ export const IntroContents = styled.div`
 		color: #fff;
 		font-size: 1.6rem;
 		line-height: 1.6;
+	}
+	${device.mobile} {
+		width:100%;	
+		padding:0;
+		border-top:1px solid #fff; padding:2rem 0 0 0;
+		.intro_contents_txt {text-align:center;}
 	}
 `;

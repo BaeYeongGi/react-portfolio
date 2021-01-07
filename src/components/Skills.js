@@ -207,6 +207,9 @@ const swiperParams = {
 		},
 		480: {
 			slidesPerView:2
+		},
+		0: {
+			slidesPerView:1.6
 		}
 	}
 

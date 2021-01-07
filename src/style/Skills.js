@@ -118,7 +118,7 @@ export const SkillsContents = styled.div`
 		}
 	}
 	${device.mobile} { 
-		width:80%;
+		width:100%;
 		> dl {
 			> dt {margin:0 0 2rem 0;}
 		}
