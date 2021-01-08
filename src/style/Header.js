@@ -137,6 +137,7 @@ export const MobileGnbWrap = styled.div`
 	padding: 2rem;
 	transition-property: right;
 	transition-duration: ${transitionDuration.normal};
+	.mobile_gnb_txt {text-align:center; font-style:italic; color:#777; margin:4rem 0 0 0; line-height:1.4;}
 	&.hidden {
 		right: -100%;
 	}

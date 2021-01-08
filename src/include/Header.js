@@ -41,14 +41,15 @@ const Header = () => {
           {GnbList}         
         </MobileGnb>
         <MobileGnbSns>
-          <li><a href="#" className="naver"><i className="xi-naver"></i></a></li>
-          <li><a href="#" className="github"><i className="xi-github"></i></a></li>
+          <li><a href="https://blog.naver.com/byk5913" target="_blank" rel="noreferrer" className="naver"><i className="xi-naver"></i></a></li>
+          <li><a href="https://github.com/BaeYeongGi" target="_blank" rel="noreferrer" className="github"><i className="xi-github"></i></a></li>
           <li><a href="#" className="kakao"><i className="xi-kakaotalk"></i></a></li>
         </MobileGnbSns>
         <MobileGnbContact>
           <li><a href="tel:010-5260-5913"><i className="xi-mobile"></i> 010-5260-5913</a></li>
           <li><a href="mailto:byg5913@gmail.com"><i className="xi-mail"></i> byg5913@gmail.com</a></li>
         </MobileGnbContact>
+        <p className="mobile_gnb_txt">react.js 라이브러리로 제작된<br/> 포트폴리오 페이지 입니다.</p>
       </MobileGnbWrap>
     </>
   );

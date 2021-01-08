@@ -67,7 +67,10 @@ const Portfolio = () => {
 							</PortfolioPage>
 						</li>
 						<li>
-							<PortfolioThumb>
+							<PortfolioThumb
+								href="https://baeyeonggi.github.io/portfolio/"
+								target="_blank"
+								rel="noreferrer">
 								<img src={images.publishing} alt="Web Publishing Portfolio" />
 								<div className="name">
 									<span></span>

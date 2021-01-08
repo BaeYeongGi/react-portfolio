@@ -31,9 +31,12 @@ export const PortfolioListWrap = styled.ul`
 	}
 `;
 
-export const PortfolioThumb = styled.div`
+export const PortfolioThumb = styled.a`
+	display:block;
+	width:100%;
 	cursor: url(${images.clickCursor}), auto;
 	position: relative;
+	> img {width:100%;}
 	.name {
 		position: absolute;
 		top: 0;
@@ -50,7 +53,7 @@ export const PortfolioThumb = styled.div`
 			width: 100%;
 			transform: translate(-50%, -50%);
 			transition-property: opacity, top;
-			transition-duration: ${transitionDuration.normal}s;
+			transition-duration: ${transitionDuration.normal};
 			color: #fff;
 			opacity: 0;
 			font-size: 3rem;

@@ -39,7 +39,7 @@ const Footer = () => {
 				</FooterSNS>
 				<FooterInfo>
           <li><a href="tel:010-5260-5913">010-5260-5913</a></li>
-          <li><a href="mailto:byk5913@naver.com">byk5913@naver.com</a></li>
+          <li><a href="mailto:byg5913@gmail.com">byg5913@gmail.com</a></li>
           <li>Copyrightⓒ2020 BaeYeongGi All rights reserved</li>
         </FooterInfo>
 			</FooterContents>
