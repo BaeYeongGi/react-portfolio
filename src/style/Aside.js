@@ -53,8 +53,6 @@ export const SideBar = styled.div`
 			width: 4rem;
 		}
 	}
-	${device.mobile} {
-	}
 `;
 
 export const DateState = styled.ul`
@@ -94,15 +92,10 @@ export const WeatherState = styled.ul`
 		margin: 0.8rem 10% 0.6rem 10%;
 		background: #666;
 	}
-
-	${device.labtop} {
-	}
 	${device.tablet} {
 		&::before {
 			display: none;
 		}
-	}
-	${device.mobile} {
 	}
 `;
 
@@ -118,14 +111,10 @@ export const TimeState = styled.ul`
 			}
 		}
 	}
-	${device.labtop} {
-	}
 	${device.tablet} {
 		margin: 0;
 		&::after {
 			${blankArea}
 		}
-	}
-	${device.mobile} {
 	}
 `;

@@ -28,10 +28,6 @@ export const HeaderWrap = styled.div`
 	${device.labtop} {
 		height: 80px;
 	}
-	${device.tablet} {
-	}
-	${device.mobile} {
-	}
 `;
 
 export const Head = styled.header`

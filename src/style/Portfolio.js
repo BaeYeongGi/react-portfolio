@@ -226,7 +226,6 @@ export const PortfolioPage = styled.a`
 		&::after {
 			left: 0;
 		}
-		> span {}
 	}
 `;
 

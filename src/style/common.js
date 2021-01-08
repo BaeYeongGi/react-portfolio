@@ -42,12 +42,6 @@ export const Section = styled.section`
 		right: 2rem;
 		border: 1px solid #fff;
 	}
-  ${device.labtop} {
-   
-  }
-  ${device.tablet} {
-
-  }
   ${device.mobile} {
 		padding:6rem 4rem 4rem 4rem;
   }	

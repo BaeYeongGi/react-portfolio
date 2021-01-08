@@ -17,9 +17,6 @@ export const FooterContents = styled.footer`
    width:100%;
    padding:0 3rem;
   }
-  ${device.tablet} {
-
-  }
   ${device.mobile} {
     flex-wrap:wrap;
     justify-content:center;
