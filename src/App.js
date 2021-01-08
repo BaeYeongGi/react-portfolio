@@ -35,7 +35,7 @@ const SectionWrapper = styled.div`
 		padding:12rem 3rem 0 3rem;
   }
   ${device.mobile} {
-
+		padding:11rem 3rem 0 3rem;
   }
 `;
 

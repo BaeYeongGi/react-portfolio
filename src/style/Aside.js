@@ -53,6 +53,9 @@ export const SideBar = styled.div`
 			width: 4rem;
 		}
 	}
+	${device.mobile} {
+		top:60px;	
+	}
 `;
 
 export const DateState = styled.ul`

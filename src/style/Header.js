@@ -28,6 +28,9 @@ export const HeaderWrap = styled.div`
 	${device.labtop} {
 		height: 80px;
 	}
+	${device.mobile} {
+		height:60px;
+	}
 `;
 
 export const Head = styled.header`
