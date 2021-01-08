@@ -50,7 +50,7 @@ export const Section = styled.section`
 
 export const SectionArea = styled.div`
 	position: absolute;
-	top: -12rem;
+	top: -10rem;
 	left: 0;
 	width: 1px;
 	height: 1px;
