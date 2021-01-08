@@ -134,6 +134,7 @@ export const MobileGnbWrap = styled.div`
 	background: #fff;
 	z-index: 3;
 	padding: 2rem;
+	border-radius:0 0 0 7rem;
 	transition-property: right;
 	transition-duration: ${transitionDuration.normal};
 	.mobile_gnb_txt {text-align:center; font-style:italic; color:#777; margin:4rem 0 0 0; line-height:1.4;}
@@ -187,6 +188,7 @@ export const MobileGnb = styled.ul`
 			line-height: 7rem;
 			color: #fff;
 			font-size: 1.8rem;
+			border-radius:1rem;
 			&.intro {
 				background: #76b0ad;
 			}
