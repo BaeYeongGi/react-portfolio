@@ -8,6 +8,12 @@ export const device = {
 	tinyMobile: "@media screen and (max-width: 400px)",
 };
 
+export const transitionDuration = {
+	slow: "0.5s",
+	normal: "0.3s",
+	fast: "0.2s",
+}
+
 export const Section = styled.section`
 	min-height: 30rem;
 	position: relative;

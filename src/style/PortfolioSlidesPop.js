@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { URL } from "include/ImageURL";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
 
 export const images = {
 	homepage: {
@@ -45,7 +45,7 @@ export const PortfolioSlideWrap = styled.div`
 			> img {
 				width:80rem;
 				transition-property:width;
-				transition-duration:0.3s;
+				transition-duration:${transitionDuration.normal};
 			}
 		}
 	}

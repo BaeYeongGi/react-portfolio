@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
 
 export const images = {
 	homepage: URL + "/images/img_portfolio_homepage.jpg",
@@ -42,7 +42,7 @@ export const PortfolioThumb = styled.div`
 		height: 100%;
 		background: rgba(0, 0, 0, 0);
 		transition-property: background;
-		transition-duration: 0.3s;
+		transition-duration: ${transitionDuration.normal};
 		> p {
 			position: absolute;
 			top: 57%;
@@ -50,7 +50,7 @@ export const PortfolioThumb = styled.div`
 			width: 100%;
 			transform: translate(-50%, -50%);
 			transition-property: opacity, top;
-			transition-duration: 0.3s;
+			transition-duration: ${transitionDuration.normal}s;
 			color: #fff;
 			opacity: 0;
 			font-size: 3rem;
@@ -67,7 +67,7 @@ export const PortfolioThumb = styled.div`
 			background: transparent;
 			position: absolute;
 			transition-property: width, height, background;
-			transition-duration: 0.2s;
+			transition-duration: ${transitionDuration.fast};
 			&::after {
 				content: "";
 				display: block;
@@ -217,7 +217,7 @@ export const PortfolioPage = styled.a`
 		left: -100%;
 		background: #082b40;
 		transition-property: left;
-		transition-duration: 0.2s;
+		transition-duration: ${transitionDuration.fast};
 	}
 	&:hover {
 		&::after {

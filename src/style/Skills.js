@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
 
 export const images = {
 	react: URL + "/images/icon_react.png",
@@ -35,12 +35,12 @@ export const SkillsWrap = styled.div`
 				align-items: center;
 				margin: 0 auto;
 				transition-property: width, height, opacity;
-				transition-duration: 0.3s;
+				transition-duration: ${transitionDuration.normal};
 				opacity: 0.7;
 				> img {
 					width: 60%;
 					transition-property: width;
-					transition-duration: 0.3s;
+					transition-duration: ${transitionDuration.normal};
 				}
 			}
 			&.swiper-slide-active {

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
 
 const blankArea = css`
 	content: "";
@@ -27,7 +27,7 @@ export const SideBar = styled.div`
 		margin: 0 auto;
 		width: 8rem;
 		transition-property: width;
-		transition-duration: 0.3s;
+		transition-duration: ${transitionDuration.normal};
 	}
 	${device.sidebar} {
 		left: auto;

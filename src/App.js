@@ -9,7 +9,7 @@ import Skills from "components/Skills";
 import Portfolio from "components/Portfolio";
 import Aside from "components/Aside";
 import styled from "styled-components";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
 
 const history = createBrowserHistory();
 const SectionWrapper = styled.div`
@@ -18,7 +18,7 @@ const SectionWrapper = styled.div`
 	padding: 14rem 0 0 0;
 	position:relative;
 	transition-property:padding, margin;
-	transition-duration:0.3s;
+	transition-duration:${transitionDuration.normal};
 	> section {
 		margin-bottom:4rem;
 		margin-top:0rem;

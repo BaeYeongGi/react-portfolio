@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
 
 export const FooterWrap = styled.div`
 	width: 100%;
@@ -36,7 +36,7 @@ export const FooterSNS = styled.ul`
       color:#fff;
       font-size:1.6rem;
       transition-property:border, color;
-      transition-duration:0.2s;
+      transition-duration:${transitionDuration.fast};
       > i {margin:0 0.4rem 0 0;}
       &:hover {
         border-right-width:8px;

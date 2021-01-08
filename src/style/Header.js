@@ -1,5 +1,18 @@
 import styled from "styled-components";
-import { device } from "style/Common";
+import { device, transitionDuration } from "style/Common";
+
+export const HeaderOpacity = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	display:none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+	&.visible {display:block;}
+	&.hidden {display:none;}
+`;
 
 export const HeaderWrap = styled.div`
 	width: 100%;
@@ -8,7 +21,7 @@ export const HeaderWrap = styled.div`
 	position: fixed;
 	z-index: 2;
 	transition-property: background, height;
-	transition-duration: 0.3s;
+	transition-duration: ${transitionDuration.normal};
 	&.active {
 		background: #615c5a;
 	}
@@ -41,7 +54,7 @@ export const Logo = styled.h1`
 		font-size: 30px;
 		font-weight: 600;
 		transition-property: font;
-		transition-duration: 0.3s;
+		transition-duration: ${transitionDuration.normal};
 
 		&::after {
 			content: "";
@@ -80,7 +93,8 @@ export const Gnb = styled.ul`
 				position: absolute;
 				left: 0;
 				bottom: -0.2rem;
-				transition: width 0.2s;
+				transition-property: width;
+				transition-duration: ${transitionDuration.fast};
 			}
 		}
 		&:not(:last-child) {
@@ -91,7 +105,7 @@ export const Gnb = styled.ul`
 				&::after {
 					width: 100%;
 				}
-			}
+			}MobileGnbWrap
 		}
 	}
 	${device.mobile} {
@@ -101,16 +115,36 @@ export const Gnb = styled.ul`
 
 export const WeatherBtn = styled.a``;
 
+export const MobileMenu = styled.a`
+	display: none;
+	> i {
+		color: #fff;
+		font-size: 4rem;
+	}
+	${device.mobile} {
+		display: block;
+	}
+`;
+
 export const MobileGnbWrap = styled.div`
 	width: 80%;
 	height: 100%;
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -100%;
 	background: #fff;
-	z-index: 2;
-  padding: 2rem;
+	z-index: 3;
+	padding: 2rem;
+	transition-property: right;
+	transition-duration: ${transitionDuration.normal};
+	&.hidden {
+		right: -100%;
+	}
+	&.visible {
+		right: 0;
+	}
 `;
+
 export const MobileGnbTop = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -150,7 +184,7 @@ export const MobileGnb = styled.ul`
 			display: block;
 			width: 100%;
 			text-align: center;
-			line-height: 6rem;
+			line-height: 7rem;
 			color: #fff;
 			font-size: 1.8rem;
 			&.intro {
@@ -185,12 +219,32 @@ export const MobileGnbSns = styled.ul`
 			width: 60px;
 			line-height: 40px;
 			text-align: center;
-      border-radius: 40px;
-      font-size:2rem;
-      &.naver {color:#3ba046;}
-      &.github {color:#333;}
-      &.kakao {color:#f0d94a;}
-    }
-    &:not(:last-child) {margin:0 0.4rem 0 0;}
+			border-radius: 40px;
+			font-size: 2rem;
+			&.naver {
+				color: #3ba046;
+			}
+			&.github {
+				color: #333;
+			}
+			&.kakao {
+				color: #f0d94a;
+			}
+		}
+		&:not(:last-child) {
+			margin: 0 0.6rem 0 0;
+		}
+	}
+`;
+
+export const MobileGnbContact = styled.ul`
+	text-align: center;
+	margin: 3rem 0 0 0;
+	> li {
+		margin: 0 0 1.6rem 0;
+		> a {
+			color: #444;
+			border-bottom: 1px solid #444;
+		}
 	}
 `;
