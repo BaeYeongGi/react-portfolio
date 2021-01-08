@@ -1,6 +1,6 @@
 import React from "react";
 import { Section, SectionTitle, Contents, SectionArea } from "style/Common";
-import { IntroProfileWrap, IntroContents } from "style/Intro";
+import { IntroProfileWrap, IntroContents, images } from "style/Intro";
 
 
 const Intro = () => {
@@ -10,7 +10,7 @@ const Intro = () => {
 			<SectionTitle className="intro">Intro</SectionTitle>
 			<Contents class="intro_contents">
 				<IntroProfileWrap>
-					<div className="intro_profile_img"></div>
+					<img src={images.profile} alt="배영기" className="intro_profile_img" />
 					<dl>
 						<dt>Name</dt>
 						<dd>Bae yeong gi</dd>

@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import { device } from "style/Common";
+import { URL } from "include/ImageURL";
+
+export const images = {
+	profile: URL + "/images/img_profile.png"
+}
 
 export const IntroProfileWrap = styled.div`
 	.intro_profile_img {
 		width: 15rem;
 		height: 15rem;
 		border-radius: 15rem;
+		display:block;
 		margin: 0 0 1.6rem 0;
 		background: #d5e5ff;
 	}
@@ -32,7 +38,7 @@ export const IntroProfileWrap = styled.div`
 	${device.mobile} {
 		width:100%;
 		margin:0 0 2rem 0;
-		.intro_profile_img { 
+		.intro_profile_img { 			
 			margin:0 auto 1.6rem auto;
 		}	
 	}
