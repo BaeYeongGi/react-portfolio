@@ -18,6 +18,7 @@ export const images = {
 		changePassword: URL + "/images/portfolio_homepage_change_password.jpg",
 		contactList: URL + "/images/portfolio_homepage_contact_list.jpg",
 		contactView: URL + "/images/portfolio_homepage_contact_view.jpg",
+		contactUpdate: URL + "/images/portfolio_homepage_contact_update.jpg",
 	},
 	tisepx: {
 		main: URL + "/images/portfolio_tisepx_main.jpg",

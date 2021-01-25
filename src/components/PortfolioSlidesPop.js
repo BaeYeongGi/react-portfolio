@@ -2,7 +2,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay, Keyboard } from "swiper";
 import "swiper/swiper.scss";
-import { images, PortfolioSlideWrap, PortfolioTxt, PortfolioTitle, PortfolioSlidePrev, PortfolioSlideNext } from "style/PortfolioSlidesPop";
+import {
+	images,
+	PortfolioSlideWrap,
+	PortfolioTxt,
+	PortfolioTitle,
+	PortfolioSlidePrev,
+	PortfolioSlideNext
+} from "style/PortfolioSlidesPop";
 
 SwiperCore.use([Navigation, Pagination, Autoplay, Keyboard]);
 
@@ -164,6 +171,16 @@ const PortfolioSlidesPop = ({ portfolioType }) => {
 								<li>게시글의 패스워드가 일치하면 게시글의 상세페이지를 보여줍니다.</li>
 							</PortfolioTxt>
 						</SwiperSlide>
+						<SwiperSlide>
+							<img src={images.homepage.contactUpdate} alt="contactUpdate" />
+							<PortfolioTxt>
+								<li>작성했던 게시글의 내용을 수정합니다. 수정된 파일의 경우도 함께 적용시켜야 하기 때문에 multipart/form-data를 적용시켜줍니다.</li>
+								<li>
+									폰트 스타일, 컬러, 사이즈, 이미지 첨부 등 다양한 작성 기능을 제공 하는
+									위지윅에디터(react-quill) 모듈을 이용하여 내용을 적용합니다.
+								</li>
+							</PortfolioTxt>
+						</SwiperSlide>						
 					</Swiper>
 					}
 					{portfolioType === 'popTisepx' &&
