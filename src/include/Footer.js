@@ -28,7 +28,7 @@ const Footer = () => {
 					</li>
 					<li>
             <a
-            href="#"
+            href="https://open.kakao.com/o/s8EADgXc"
             target="_blank"
             className="kakao"
             rel="noreferrer"

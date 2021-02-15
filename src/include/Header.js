@@ -43,7 +43,7 @@ const Header = () => {
         <MobileGnbSns>
           <li><a href="https://blog.naver.com/byk5913" target="_blank" rel="noreferrer" className="naver"><i className="xi-naver"></i></a></li>
           <li><a href="https://github.com/BaeYeongGi" target="_blank" rel="noreferrer" className="github"><i className="xi-github"></i></a></li>
-          <li><a href="#" className="kakao"><i className="xi-kakaotalk"></i></a></li>
+          <li><a href="https://open.kakao.com/o/s8EADgXc" target="_blank" rel="noreferrer" className="kakao"><i className="xi-kakaotalk"></i></a></li>
         </MobileGnbSns>
         <MobileGnbContact>
           <li><a href="tel:010-5260-5913"><i className="xi-mobile"></i> 010-5260-5913</a></li>
