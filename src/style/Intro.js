@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "style/Common";
+import { device } from "style/common";
 import { URL } from "include/ImageURL";
 
 export const images = {

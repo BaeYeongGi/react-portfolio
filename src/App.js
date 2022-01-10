@@ -9,7 +9,7 @@ import Skills from "components/Skills";
 import Portfolio from "components/Portfolio";
 import Aside from "components/Aside";
 import styled from "styled-components";
-import { device, transitionDuration } from "style/Common";
+import { device, transitionDuration } from "style/common";
 
 const history = createBrowserHistory();
 const SectionWrapper = styled.div`

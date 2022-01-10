@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device, transitionDuration } from "style/Common";
+import { device, transitionDuration } from "style/common";
 
 export const FooterWrap = styled.div`
 	width: 100%;

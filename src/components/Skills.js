@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Section, SectionTitle, SectionArea } from "style/Common";
+import { Section, SectionTitle, SectionArea } from "style/common";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper.scss";

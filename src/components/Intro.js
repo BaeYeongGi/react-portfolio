@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, SectionTitle, Contents, SectionArea } from "style/Common";
+import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import { IntroProfileWrap, IntroContents, images } from "style/Intro";
 
 
@@ -21,7 +21,7 @@ const Intro = () => {
 					</dl>
 					<dl>
 						<dt>Live in</dt>
-						<dd>Seoul</dd>
+						<dd>Incheon</dd>
 					</dl>
 				</IntroProfileWrap>
 				<IntroContents>
@@ -36,7 +36,9 @@ const Intro = () => {
 					<hr className="intro_contents_line" />
 					<p className="intro_contents_history_title">History</p>
 					<dl className="intro_contents_history_contents">
-						<dt>[ 메디컬아이피(소프트웨어) ] - 2020.06 ~ 재직중</dt>
+						<dt>[ SK커뮤니케이션즈 ] - 2021.03 ~ 재직중</dt>
+						<dd>- 프론트앤드 개발</dd>						
+						<dt>[ 메디컬아이피(소프트웨어) ] - 2020.06 ~ 2021.03</dt>
 						<dd>- 프론트앤드 개발</dd>
 						<dt>[ 아이디병원(기업) ] - 2019.06 ~ 2020.04</dt>
 						<dd>- 웹퍼블리싱</dd>

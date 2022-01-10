@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
-import { device, transitionDuration } from "style/Common";
+import { device, transitionDuration } from "style/common";
 
 export const images = {
 	react: URL + "/images/icon_react.png",

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Section, SectionTitle, Contents, SectionArea } from "style/Common";
+import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import { InterviewTabs, InterviewContents } from "style/SelfInterview";
 
 const Reason = () => {
@@ -48,7 +48,7 @@ const Changing = () => {
 				<li>
 					아이디병원) 코로나19로 인한 경영난으로 이직을 하게 되었습니다. 다양한 퍼블리싱 업무를 익힌 후 프론트앤드 개발을 하고싶다는 목표를 가지게 되었습니다. [11개월]
 				</li>
-				<li>메디컬아이피) 현재는 의료 소프트웨어 개발 회사인 메디컬아이피에 프론트앤드 개발자로 재직중에 있습니다. [20년 6월 ~ 재직중]</li>
+				<li>메디컬아이피) 경력개발을 위해 이직을 하게 되었습니다. [9개월]</li>
 			</ul>
 			<p>짧은 기간에 잦은 이직이 좋은건 아니라고 생각합니다. 프론트앤드 개발을 하겠다는 확실한 방향성과 목표를 가지고 앞으로 하고싶은일을 한 회사에서 꾸준히 하게 되었으면 좋겠습니다.</p>
 		</>

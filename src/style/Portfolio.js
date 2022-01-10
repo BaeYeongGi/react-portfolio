@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
-import { device, transitionDuration } from "style/Common";
+import { device, transitionDuration } from "style/common";
 
 export const images = {
 	homepage: URL + "/images/img_portfolio_homepage.jpg",

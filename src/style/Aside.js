@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { device, transitionDuration } from "style/Common";
+import { device, transitionDuration } from "style/common";
 
 const blankArea = css`
 	content: "";

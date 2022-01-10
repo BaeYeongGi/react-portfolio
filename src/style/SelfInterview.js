@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { URL } from "include/ImageURL";
-import { device } from "style/Common";
+import { device } from "style/common";
 
 const images = {
 	clickCursor: URL + "/images/icon_click_cursor_brown.png",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Section, SectionTitle, Contents, SectionArea } from "style/Common";
+import { Section, SectionTitle, Contents, SectionArea } from "style/common";
 import PortfolioSlidesPop from "components/PortfolioSlidesPop";
 import { images, PortfolioListWrap, PortfolioThumb, PortfolioPage, PortfolioOpacity, PortfolioPopWrap, PopCloseBtn } from "style/Portfolio";
 
