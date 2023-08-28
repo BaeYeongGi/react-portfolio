@@ -25,64 +25,56 @@ const Portfolio = () => {
 		<>
 			<Section className="portfolio">
 				<SectionArea id="Portfolio" />
-				<SectionTitle className="portfolio">Portfolio</SectionTitle>
+				<SectionTitle className="portfolio">Album Sample</SectionTitle>
 				<Contents>
 					<PortfolioListWrap>
 						<li>
 							<PortfolioThumb onClick={homepagePop}>
-								<img src={images.homepage} alt="Homepage Renewal" />
+								<img src="https://picsum.photos/324/324" alt="sample1" />
 								<div className="name">
 									<span></span>
 									<span></span>
 									<span></span>
 									<span></span>
 									<p>
-										Homepage
-										<br />
-										Renewal
-										<strong>(publishing &amp; react)</strong>
+										Album1
 									</p>
 								</div>
 							</PortfolioThumb>
-							<PortfolioPage href="http://www.medicalip.com/" target="_blank" rel="noreferrer">
+							<PortfolioPage href="https://baeyeonggi.github.io/resume/" target="_blank" rel="noreferrer">
 								<span>{pageLink}</span>
 							</PortfolioPage>
 						</li>
 						<li>
 							<PortfolioThumb onClick={tisepxPop}>
-								<img src={images.tisepx} alt="TiSepX" />
+								<img src="https://picsum.photos/324/324" alt="sample2" />
 								<div className="name">
 									<span></span>
 									<span></span>
 									<span></span>
 									<span></span>
 									<p>
-										TiSepX
-										<strong>(publishing &amp; react)</strong>
+										Album2
 									</p>
 								</div>
 							</PortfolioThumb>
-							<PortfolioPage href="http://tisepx.com/" target="_blank" rel="noreferrer">
+							<PortfolioPage href="https://baeyeonggi.github.io/resume/" target="_blank" rel="noreferrer">
 								<span>{pageLink}</span>
 							</PortfolioPage>
 						</li>
 						<li>
 							<PortfolioThumb
-								href="https://baeyeonggi.github.io/portfolio/"
+								href="https://baeyeonggi.github.io/resume/"
 								target="_blank"
 								rel="noreferrer">
-								<img src={images.publishing} alt="Web Publishing Portfolio" />
+								<img src="https://picsum.photos/324/324" alt="sample3" />
 								<div className="name">
 									<span></span>
 									<span></span>
 									<span></span>
 									<span></span>
 									<p>
-										Web
-										<br />
-										Publishing
-										<br />
-										Portfolio
+										Album3
 									</p>
 								</div>
 							</PortfolioThumb>

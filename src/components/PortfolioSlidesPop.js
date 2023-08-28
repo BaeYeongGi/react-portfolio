@@ -31,9 +31,9 @@ const PortfolioSlidesPop = ({ portfolioType }) => {
 		<>			
 				<PortfolioTitle>
 					{
-						portfolioType === "popHomepage" ? "Homepage" : 
-						(portfolioType === "popTisepx") && "TiSepX"
-					} Portfolio
+						portfolioType === "popHomepage" ? "First" : 
+						(portfolioType === "popTisepx") && "Second"
+					} Album
 				</PortfolioTitle>
 				<PortfolioSlideWrap>
 					{portfolioType === 'popHomepage' &&

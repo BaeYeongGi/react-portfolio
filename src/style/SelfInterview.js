@@ -20,9 +20,11 @@ export const InterviewTabs = styled.ul`
 		> a {
 			display: flex;
 			align-items: center;
+			justify-content:center;
 			width: 100%;
 			height: 100%;
 			padding: 0 1.4rem;
+			text-align:center;
 			color: #fff;
 			background: #786e6e;
 			font-size: 1.6rem;

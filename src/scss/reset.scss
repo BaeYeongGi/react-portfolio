@@ -49,6 +49,10 @@ body {
 	background:#f0e5de;
 }
 
+iframe {
+	display:none;
+}
+
 @media screen and (max-width: 1280px){
   html {font-size:60%;}
 }
